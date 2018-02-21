@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@drawable/bgnormal">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/batteryicon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Enter Details"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:layout_below="@+id/textViewNattery"
+            android:textColorHint="@color/colorPrimaryDark">
+
+            <EditText
+                android:id="@+id/editTextNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:hint="Enter Number"
+                android:inputType="number"
+                android:drawablePadding="6dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="17dp"
+                android:drawableLeft="@drawable/keypad"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageViewContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="22dp"
+            android:layout_weight="4"
+            android:src="@drawable/phonebook" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/eil2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilNum"
+        android:textColorHint="@color/colorPrimaryDark"
+        >
+
+        <EditText
+            android:id="@+id/editTextBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="70dp"
+            android:ems="10"
+            android:drawablePadding="6dp"
+            android:drawableLeft="@drawable/batterypercent"
+            android:hint="Enter Battery Percentage"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eil2"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnshape"
+            android:text="Set Call"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnSetMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnshape"
+            android:text="Set Message"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
